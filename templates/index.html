@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container bg-light " style="padding-top: 30px;">
+        <form action="/process" method="POST" >
+        <div class="form-group">
+            <label for="name" class="text-primary">Your Name:</label>
+            <input type="text" name="name" class="form-control text-primary" >
+        </div>
+        <div class="form-group">
+            <label for="location" class="text-primary">Dojo Location:</label>
+            <select name="location" id="" class="form-control text-primary">
+                <option value="San Jose">San Jose</option>
+                <option value="San Jose3">San Jose3</option>
+                <option value="San Jose4">San Jose4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="language" class="text-primary">Favorite Languaje:</label>
+            <select name="language" id="" class="form-control text-primary">
+                <option value="Python">Python</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+        </div>
+        <div class="form-group" >
+            <label for="comments" class="text-primary">Comment (optional):</label>
+            <textarea  name="comments" id="" cols="30" rows="10" class="form-control text-primary"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        </form>
+    </main>
+    
+</body>
+</html>
