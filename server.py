@@ -7,7 +7,7 @@ app.secret_key="lalalalala"
 def index():
     return render_template('index.html')
 
-@app.route('/process',methods=['POST'])
+@app.route('/redirigir',methods=['POST'])
 def process():
     session["name"] = request.form["name"]
     session["location"] = request.form["location"]
